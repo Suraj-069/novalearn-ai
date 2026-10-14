@@ -25,6 +25,8 @@ function describe(detail: unknown, fallback: string): string {
   return fallback;
 }
 
+export const API_BASE = (import.meta.env.VITE_API_BASE_URL ?? "").replace(/\/+$/, "");
+
 async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   const headers = new Headers(init.headers);
   const token = tokenStore.get();
@@ -33,9 +35,9 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
 
   let res: Response;
   try {
-    res = await fetch(`/api${path}`, { ...init, headers });
+    res = await fetch(`${API_BASE}/api${path}`, { ...init, headers });
   } catch {
-    throw new ApiError(0, "Can't reach the server. Check that the backend is running on port 8000.");
+    throw new ApiError(0, "Can't reach the server. Check that the backend is running and CORS is configured.");
   }
   if (res.status === 401 && token) {
     tokenStore.clear();
@@ -146,7 +148,7 @@ export const api = {
   /** Fetches the original file with auth and opens it in a new tab (a plain link can't send the token). */
   async openDocument(id: string) {
     const token = tokenStore.get();
-    const res = await fetch(`/api/documents/${id}/file`, { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+    const res = await fetch(`${API_BASE}/api/documents/${id}/file`, { headers: token ? { Authorization: `Bearer ${token}` } : {} });
     if (!res.ok) throw new ApiError(res.status, "Couldn't open this file.");
     const url = URL.createObjectURL(await res.blob());
     window.open(url, "_blank", "noopener");

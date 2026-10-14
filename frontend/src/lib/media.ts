@@ -1,4 +1,4 @@
-import { api } from "@/services/api";
+import { API_BASE, api } from "@/services/api";
 
 const cache = new Map<string, { token: string; exp: number }>();
 
@@ -11,6 +11,6 @@ export async function mediaToken(docId: string): Promise<string> {
   return r.token;
 }
 
-export const mediaUrl = (docId: string, token: string) => `/api/media/documents/${docId}?t=${encodeURIComponent(token)}`;
-export const pageImageUrl = (docId: string, page: number, token: string) => `/api/media/documents/${docId}/pages/${page}.png?t=${encodeURIComponent(token)}`;
-export const figureImageUrl = (docId: string, figureRef: string, token: string) => `/api/media/documents/${docId}/figures/${encodeURIComponent(figureRef)}?t=${encodeURIComponent(token)}`;
+export const mediaUrl = (docId: string, token: string) => `${API_BASE}/api/media/documents/${docId}?t=${encodeURIComponent(token)}`;
+export const pageImageUrl = (docId: string, page: number, token: string) => `${API_BASE}/api/media/documents/${docId}/pages/${page}.png?t=${encodeURIComponent(token)}`;
+export const figureImageUrl = (docId: string, figureRef: string, token: string) => `${API_BASE}/api/media/documents/${docId}/figures/${encodeURIComponent(figureRef)}?t=${encodeURIComponent(token)}`;
