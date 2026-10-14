@@ -1,0 +1,2629 @@
+{
+  "created_at": "2026-10-14T13:10:12.490754+00:00",
+  "course_id": "0016991c-2483-48f9-b9ed-02029a38f2bb",
+  "course_title": "Computer Network",
+  "source_excerpt_count": 161,
+  "runs": 5,
+  "seed": 17,
+  "method": "synthetic learner answers through production assessment creation, attempt, grading and BKT services in disposable SQLite; uniform random-topic selection versus production mastery-weighted adaptive assessment creation",
+  "result": {
+    "available": true,
+    "synthetic_only": true,
+    "service_path": [
+      "create_assessment",
+      "start_attempt",
+      "submit_attempt",
+      "grade_answer",
+      "record_answer",
+      "BKT update"
+    ],
+    "evidence": {
+      "assessments_created": 600,
+      "attempts_submitted": 600,
+      "graded_answers": 600,
+      "mastery_events": 600,
+      "learners": 40
+    },
+    "trajectories": [
+      {
+        "profile": "weak",
+        "run": 1,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.3147796003471809,
+            "synthetic_mastery_gain": 0.030144879967281546,
+            "production_bkt_estimate": 0.22957594542443444,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.3385078921426527,
+            "synthetic_mastery_gain": 0.05387317176275336,
+            "production_bkt_estimate": 0.3592416401913325,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.3625932419357658,
+            "synthetic_mastery_gain": 0.07795852155586647,
+            "production_bkt_estimate": 0.35317799374607883,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5555555555555556
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.38588773852212155,
+            "synthetic_mastery_gain": 0.1012530181422222,
+            "production_bkt_estimate": 0.35856172799579245,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.40742491480581156,
+            "synthetic_mastery_gain": 0.12279019442591221,
+            "production_bkt_estimate": 0.36862121092620825,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4666666666666667
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.28463472037989934,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.3670886075949367,
+        "recommendation_count": 79,
+        "topic_coverage": 0.7777777777777778,
+        "final_estimate_error": -0.0388037038796033,
+        "final_absolute_estimate_error": 0.0388037038796033
+      },
+      {
+        "profile": "weak",
+        "run": 1,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.3015753536965615,
+            "synthetic_mastery_gain": 0.027640921588177103,
+            "production_bkt_estimate": 0.23356546582741844,
+            "topics_practiced": 1,
+            "topic_coverage": 0.1111111111111111,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.3241629786001126,
+            "synthetic_mastery_gain": 0.0502285464917282,
+            "production_bkt_estimate": 0.22490753038751116,
+            "topics_practiced": 1,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.16666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.3440004734392091,
+            "synthetic_mastery_gain": 0.07006604133082467,
+            "production_bkt_estimate": 0.3029868119027077,
+            "topics_practiced": 2,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.37005105825615453,
+            "synthetic_mastery_gain": 0.09611662614777011,
+            "production_bkt_estimate": 0.3869580948696385,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4166666666666667
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.39669933984694017,
+            "synthetic_mastery_gain": 0.12276490773855575,
+            "production_bkt_estimate": 0.4709293778365693,
+            "topics_practiced": 2,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4666666666666667
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.2739344321083844,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.39655172413793105,
+        "recommendation_count": 58,
+        "topic_coverage": 0.7777777777777778,
+        "final_estimate_error": 0.07423003798962913,
+        "final_absolute_estimate_error": 0.07423003798962913
+      },
+      {
+        "profile": "weak",
+        "run": 2,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.2943152361258474,
+            "synthetic_mastery_gain": 0.028836315124843526,
+            "production_bkt_estimate": 0.1847513071198425,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.31840034235784376,
+            "synthetic_mastery_gain": 0.05292142135683986,
+            "production_bkt_estimate": 0.17068478756478758,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.34436039047538114,
+            "synthetic_mastery_gain": 0.07888146947437724,
+            "production_bkt_estimate": 0.1608446787997778,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.0
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.36624676095026865,
+            "synthetic_mastery_gain": 0.10076783994926475,
+            "production_bkt_estimate": 0.24967683287798137,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.16666666666666666
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.3881383853881178,
+            "synthetic_mastery_gain": 0.12265946438711389,
+            "production_bkt_estimate": 0.282931476088586,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.2
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.2654789210010039,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.5966386554621849,
+        "recommendation_count": 119,
+        "topic_coverage": 0.7777777777777778,
+        "final_estimate_error": -0.1052069092995318,
+        "final_absolute_estimate_error": 0.1052069092995318
+      },
+      {
+        "profile": "weak",
+        "run": 2,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.3230434690349002,
+            "synthetic_mastery_gain": 0.028707840150331232,
+            "production_bkt_estimate": 0.28397128296693075,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.3494445094331393,
+            "synthetic_mastery_gain": 0.05510888054857033,
+            "production_bkt_estimate": 0.3721046810566183,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.3671924491122651,
+            "synthetic_mastery_gain": 0.07285682022769613,
+            "production_bkt_estimate": 0.4119500817074732,
+            "topics_practiced": 1,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5555555555555556
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.38706835229730985,
+            "synthetic_mastery_gain": 0.09273272341274086,
+            "production_bkt_estimate": 0.44551554753489164,
+            "topics_practiced": 1,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.4126749678963964,
+            "synthetic_mastery_gain": 0.11833933901182742,
+            "production_bkt_estimate": 0.5336489456245792,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.294335628884569,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.6125,
+        "recommendation_count": 80,
+        "topic_coverage": 1.0,
+        "final_estimate_error": 0.1209739777281828,
+        "final_absolute_estimate_error": 0.1209739777281828
+      },
+      {
+        "profile": "weak",
+        "run": 3,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.31472850820325876,
+            "synthetic_mastery_gain": 0.03226834021479602,
+            "production_bkt_estimate": 0.17934272300469484,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.3394749322389261,
+            "synthetic_mastery_gain": 0.05701476425046337,
+            "production_bkt_estimate": 0.16950261423968505,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.3574360323871411,
+            "synthetic_mastery_gain": 0.07497586439867837,
+            "production_bkt_estimate": 0.2237896980897771,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.2222222222222222
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.3754489913856779,
+            "synthetic_mastery_gain": 0.09298882339721515,
+            "production_bkt_estimate": 0.1773957148262847,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.16666666666666666
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.3871878404086861,
+            "synthetic_mastery_gain": 0.10472767242022335,
+            "production_bkt_estimate": 0.23201919965083906,
+            "topics_practiced": 1,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.26666666666666666
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.28246016798846274,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.631578947368421,
+        "recommendation_count": 114,
+        "topic_coverage": 0.5555555555555556,
+        "final_estimate_error": -0.15516864075784703,
+        "final_absolute_estimate_error": 0.15516864075784703
+      },
+      {
+        "profile": "weak",
+        "run": 3,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.30873757460636564,
+            "synthetic_mastery_gain": 0.02875993421920192,
+            "production_bkt_estimate": 0.23914664466233887,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.3240405934030201,
+            "synthetic_mastery_gain": 0.04406295301585639,
+            "production_bkt_estimate": 0.2387821985415741,
+            "topics_practiced": 1,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.16666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.33886393795831005,
+            "synthetic_mastery_gain": 0.05888629757114633,
+            "production_bkt_estimate": 0.32783015075158495,
+            "topics_practiced": 2,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.36619336080764814,
+            "synthetic_mastery_gain": 0.08621572042048442,
+            "production_bkt_estimate": 0.3574060961760194,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.38871371899070245,
+            "synthetic_mastery_gain": 0.10873607860353873,
+            "production_bkt_estimate": 0.3909715620034378,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.2799776403871637,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.5789473684210527,
+        "recommendation_count": 57,
+        "topic_coverage": 0.6666666666666666,
+        "final_estimate_error": 0.00225784301273535,
+        "final_absolute_estimate_error": 0.00225784301273535
+      },
+      {
+        "profile": "weak",
+        "run": 4,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.3084444090656971,
+            "synthetic_mastery_gain": 0.03177953894008023,
+            "production_bkt_estimate": 0.23373806054719118,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.33320614647107877,
+            "synthetic_mastery_gain": 0.05654127634546191,
+            "production_bkt_estimate": 0.32169886391710595,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.35857914219049114,
+            "synthetic_mastery_gain": 0.08191427206487428,
+            "production_bkt_estimate": 0.272228570622746,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.3835293890461956,
+            "synthetic_mastery_gain": 0.10686451892057874,
+            "production_bkt_estimate": 0.30721310016232817,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.4081252512062851,
+            "synthetic_mastery_gain": 0.13146038108066826,
+            "production_bkt_estimate": 0.34219762970191026,
+            "topics_practiced": 2,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.27666487012561686,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.6545454545454545,
+        "recommendation_count": 110,
+        "topic_coverage": 0.8888888888888888,
+        "final_estimate_error": -0.06592762150437487,
+        "final_absolute_estimate_error": 0.06592762150437487
+      },
+      {
+        "profile": "weak",
+        "run": 4,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.3075548023978368,
+            "synthetic_mastery_gain": 0.029418787759124154,
+            "production_bkt_estimate": 0.22957594542443444,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.32774924872895383,
+            "synthetic_mastery_gain": 0.04961323409024121,
+            "production_bkt_estimate": 0.22774571555012013,
+            "topics_practiced": 1,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.16666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.3496970767308523,
+            "synthetic_mastery_gain": 0.0715610620921397,
+            "production_bkt_estimate": 0.3099248173478912,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.3755054606324106,
+            "synthetic_mastery_gain": 0.09736944599369796,
+            "production_bkt_estimate": 0.34490934688747327,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.3980885795051881,
+            "synthetic_mastery_gain": 0.11995256486647549,
+            "production_bkt_estimate": 0.37847481271489175,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.2781360146387126,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.43333333333333335,
+        "recommendation_count": 60,
+        "topic_coverage": 0.6666666666666666,
+        "final_estimate_error": -0.01961376679029636,
+        "final_absolute_estimate_error": 0.01961376679029636
+      },
+      {
+        "profile": "weak",
+        "run": 5,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.31388029901375364,
+            "synthetic_mastery_gain": 0.02922567154340938,
+            "production_bkt_estimate": 0.1847513071198425,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.33627059940920057,
+            "synthetic_mastery_gain": 0.05161597193885631,
+            "production_bkt_estimate": 0.3175367487943492,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.365091035752098,
+            "synthetic_mastery_gain": 0.08043640828175375,
+            "production_bkt_estimate": 0.29687947179904406,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.38946913332685357,
+            "synthetic_mastery_gain": 0.10481450585650931,
+            "production_bkt_estimate": 0.2528177626198318,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.25
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.41189635698837845,
+            "synthetic_mastery_gain": 0.1272417295180342,
+            "production_bkt_estimate": 0.3473736103248032,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.28465462747034426,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.61,
+        "recommendation_count": 100,
+        "topic_coverage": 0.8888888888888888,
+        "final_estimate_error": -0.06452274666357527,
+        "final_absolute_estimate_error": 0.06452274666357527
+      },
+      {
+        "profile": "weak",
+        "run": 5,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.30848632863353614,
+            "synthetic_mastery_gain": 0.02692013245852476,
+            "production_bkt_estimate": 0.23356546582741844,
+            "topics_practiced": 1,
+            "topic_coverage": 0.1111111111111111,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.3333057775294494,
+            "synthetic_mastery_gain": 0.05173958135443801,
+            "production_bkt_estimate": 0.3175367487943492,
+            "topics_practiced": 2,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.3598154434444948,
+            "synthetic_mastery_gain": 0.0782492472694834,
+            "production_bkt_estimate": 0.40150803176127997,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5555555555555556
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.38410670820980675,
+            "synthetic_mastery_gain": 0.10254051203479536,
+            "production_bkt_estimate": 0.48547931472821076,
+            "topics_practiced": 2,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5833333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.40442531440611257,
+            "synthetic_mastery_gain": 0.12285911823110118,
+            "production_bkt_estimate": 0.5190447805556292,
+            "topics_practiced": 1,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.2815661961750114,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.5526315789473685,
+        "recommendation_count": 76,
+        "topic_coverage": 0.8888888888888888,
+        "final_estimate_error": 0.11461946614951662,
+        "final_absolute_estimate_error": 0.11461946614951662
+      },
+      {
+        "profile": "average",
+        "run": 1,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.57557795525094,
+            "synthetic_mastery_gain": 0.01191192717323275,
+            "production_bkt_estimate": 0.1847513071198425,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5845862201104328,
+            "synthetic_mastery_gain": 0.02092019203272555,
+            "production_bkt_estimate": 0.2238979517821814,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.16666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5927217965443389,
+            "synthetic_mastery_gain": 0.029055768466631604,
+            "production_bkt_estimate": 0.29084067521922446,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5989205337030403,
+            "synthetic_mastery_gain": 0.035254505625333055,
+            "production_bkt_estimate": 0.35076209879655945,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.6076549796564483,
+            "synthetic_mastery_gain": 0.04398895157874105,
+            "production_bkt_estimate": 0.4413241392037405,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.5636660280777073,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 98,
+        "topic_coverage": 0.6666666666666666,
+        "final_estimate_error": -0.16633084045270785,
+        "final_absolute_estimate_error": 0.16633084045270785
+      },
+      {
+        "profile": "average",
+        "run": 1,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.565537195407215,
+            "synthetic_mastery_gain": 0.013783446082510031,
+            "production_bkt_estimate": 0.28397128296693075,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5733486988312362,
+            "synthetic_mastery_gain": 0.02159494950653118,
+            "production_bkt_estimate": 0.3175367487943492,
+            "topics_practiced": 1,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5816999540976734,
+            "synthetic_mastery_gain": 0.029946204772968388,
+            "production_bkt_estimate": 0.35668339345668804,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4444444444444444
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5909738909762048,
+            "synthetic_mastery_gain": 0.039220141651499785,
+            "production_bkt_estimate": 0.43923561271145517,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.600299978409726,
+            "synthetic_mastery_gain": 0.04854622908502104,
+            "production_bkt_estimate": 0.523206895678386,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.551753749324705,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 77,
+        "topic_coverage": 1.0,
+        "final_estimate_error": -0.07709308273134008,
+        "final_absolute_estimate_error": 0.07709308273134008
+      },
+      {
+        "profile": "average",
+        "run": 2,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.560570775737939,
+            "synthetic_mastery_gain": 0.013701035773428183,
+            "production_bkt_estimate": 0.3269192398144598,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5698639997897073,
+            "synthetic_mastery_gain": 0.022994259825196428,
+            "production_bkt_estimate": 0.3062619628191547,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.578022276939963,
+            "synthetic_mastery_gain": 0.031152536975452172,
+            "production_bkt_estimate": 0.3271958758427899,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4444444444444444
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5875652257843991,
+            "synthetic_mastery_gain": 0.040695485819888244,
+            "production_bkt_estimate": 0.3263236482611953,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4166666666666667
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5964038555577108,
+            "synthetic_mastery_gain": 0.04953411559319998,
+            "production_bkt_estimate": 0.3678989352410276,
+            "topics_practiced": 2,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.5468697399645108,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 106,
+        "topic_coverage": 0.7777777777777778,
+        "final_estimate_error": -0.22850492031668318,
+        "final_absolute_estimate_error": 0.22850492031668318
+      },
+      {
+        "profile": "average",
+        "run": 2,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.5598780016958188,
+            "synthetic_mastery_gain": 0.012690141879412642,
+            "production_bkt_estimate": 0.23356546582741844,
+            "topics_practiced": 1,
+            "topic_coverage": 0.1111111111111111,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5687344283719632,
+            "synthetic_mastery_gain": 0.021546568555557033,
+            "production_bkt_estimate": 0.26314141125185286,
+            "topics_practiced": 2,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5756867446688675,
+            "synthetic_mastery_gain": 0.028498884852461326,
+            "production_bkt_estimate": 0.3029868119027077,
+            "topics_practiced": 1,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5845312125803981,
+            "synthetic_mastery_gain": 0.03734335276399192,
+            "production_bkt_estimate": 0.3869580948696385,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4166666666666667
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5941445867071319,
+            "synthetic_mastery_gain": 0.04695672689072572,
+            "production_bkt_estimate": 0.5294868305018224,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.5471878598164062,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 61,
+        "topic_coverage": 0.8888888888888888,
+        "final_estimate_error": -0.06465775620530945,
+        "final_absolute_estimate_error": 0.06465775620530945
+      },
+      {
+        "profile": "average",
+        "run": 3,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.5640317111909128,
+            "synthetic_mastery_gain": 0.013114846781653533,
+            "production_bkt_estimate": 0.20492504424813646,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5728093071365237,
+            "synthetic_mastery_gain": 0.021892442727264427,
+            "production_bkt_estimate": 0.18967635136797897,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.16666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5825564991796051,
+            "synthetic_mastery_gain": 0.031639634770345815,
+            "production_bkt_estimate": 0.28440050689791674,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5926887121741169,
+            "synthetic_mastery_gain": 0.04177184776485765,
+            "production_bkt_estimate": 0.3683717898648475,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4166666666666667
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.6021552730898101,
+            "synthetic_mastery_gain": 0.05123840868055085,
+            "production_bkt_estimate": 0.4640720380438592,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.5509168644092592,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 116,
+        "topic_coverage": 0.8888888888888888,
+        "final_estimate_error": -0.13808323504595088,
+        "final_absolute_estimate_error": 0.13808323504595088
+      },
+      {
+        "profile": "average",
+        "run": 3,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.5644339875786669,
+            "synthetic_mastery_gain": 0.012304850275361434,
+            "production_bkt_estimate": 0.22957594542443444,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5707308828266671,
+            "synthetic_mastery_gain": 0.01860174552336158,
+            "production_bkt_estimate": 0.26942134607528934,
+            "topics_practiced": 1,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.577017867911941,
+            "synthetic_mastery_gain": 0.0248887306086355,
+            "production_bkt_estimate": 0.2607634106353821,
+            "topics_practiced": 1,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.2222222222222222
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5845911393599148,
+            "synthetic_mastery_gain": 0.03246200205660932,
+            "production_bkt_estimate": 0.2940180538459867,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.25
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5940826019928472,
+            "synthetic_mastery_gain": 0.04195346468954175,
+            "production_bkt_estimate": 0.32758351967340515,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.26666666666666666
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.5521291373033055,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 55,
+        "topic_coverage": 0.5555555555555556,
+        "final_estimate_error": -0.2664990823194421,
+        "final_absolute_estimate_error": 0.2664990823194421
+      },
+      {
+        "profile": "average",
+        "run": 4,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.573305459449213,
+            "synthetic_mastery_gain": 0.013119683192575504,
+            "production_bkt_estimate": 0.2881333980896875,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5818934102006865,
+            "synthetic_mastery_gain": 0.021707633944049065,
+            "production_bkt_estimate": 0.31167054693430235,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5897778984662876,
+            "synthetic_mastery_gain": 0.02959212220965013,
+            "production_bkt_estimate": 0.31056461844884803,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4444444444444444
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5977430721823139,
+            "synthetic_mastery_gain": 0.03755729592567647,
+            "production_bkt_estimate": 0.2665029092696358,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.6061724494576052,
+            "synthetic_mastery_gain": 0.04598667320096772,
+            "production_bkt_estimate": 0.29465979098190653,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.5601857762566375,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 106,
+        "topic_coverage": 0.8888888888888888,
+        "final_estimate_error": -0.31151265847569864,
+        "final_absolute_estimate_error": 0.31151265847569864
+      },
+      {
+        "profile": "average",
+        "run": 4,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.5590250251158949,
+            "synthetic_mastery_gain": 0.013906924072483062,
+            "production_bkt_estimate": 0.23914664466233887,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5679592777080461,
+            "synthetic_mastery_gain": 0.022841176664634255,
+            "production_bkt_estimate": 0.37609420145960226,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5783500244745965,
+            "synthetic_mastery_gain": 0.03323192343118464,
+            "production_bkt_estimate": 0.46006548442653306,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5851967066196611,
+            "synthetic_mastery_gain": 0.040078605576249204,
+            "production_bkt_estimate": 0.49363095025395154,
+            "topics_practiced": 1,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5833333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5929565484556266,
+            "synthetic_mastery_gain": 0.04783844741221477,
+            "production_bkt_estimate": 0.5590803917738845,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.5451181010434119,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 83,
+        "topic_coverage": 1.0,
+        "final_estimate_error": -0.03387615668174215,
+        "final_absolute_estimate_error": 0.03387615668174215
+      },
+      {
+        "profile": "average",
+        "run": 5,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.5542351412907949,
+            "synthetic_mastery_gain": 0.01358255832632349,
+            "production_bkt_estimate": 0.2725239022719635,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5640775624857868,
+            "synthetic_mastery_gain": 0.023424979521315392,
+            "production_bkt_estimate": 0.3318442840625963,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5731994813606115,
+            "synthetic_mastery_gain": 0.03254689839614011,
+            "production_bkt_estimate": 0.37972510900449064,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5825432642717902,
+            "synthetic_mastery_gain": 0.04189068130731877,
+            "production_bkt_estimate": 0.513929614391161,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.75
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5903865107119107,
+            "synthetic_mastery_gain": 0.049733927747439344,
+            "production_bkt_estimate": 0.4782308390936712,
+            "topics_practiced": 2,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.5406525829644714,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 99,
+        "topic_coverage": 0.7777777777777778,
+        "final_estimate_error": -0.11215567161823953,
+        "final_absolute_estimate_error": 0.11215567161823953
+      },
+      {
+        "profile": "average",
+        "run": 5,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.5761407522159829,
+            "synthetic_mastery_gain": 0.01219744538048273,
+            "production_bkt_estimate": 0.28397128296693075,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.5859885894733788,
+            "synthetic_mastery_gain": 0.022045282637878638,
+            "production_bkt_estimate": 0.36794256593386154,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5948596122531713,
+            "synthetic_mastery_gain": 0.030916305417671097,
+            "production_bkt_estimate": 0.5104713015660454,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7777777777777778
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.6032608634486767,
+            "synthetic_mastery_gain": 0.039317556613176485,
+            "production_bkt_estimate": 0.5944425845329762,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.75
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.610032251685671,
+            "synthetic_mastery_gain": 0.04608894485017079,
+            "production_bkt_estimate": 0.6409819199628848,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.5639433068355002,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 91,
+        "topic_coverage": 1.0,
+        "final_estimate_error": 0.030949668277213793,
+        "final_absolute_estimate_error": 0.030949668277213793
+      },
+      {
+        "profile": "strong",
+        "run": 1,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.8347244250501274,
+            "synthetic_mastery_gain": 0.0031638952147761135,
+            "production_bkt_estimate": 0.3269192398144598,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.8345010391773183,
+            "synthetic_mastery_gain": 0.0029405093419669903,
+            "production_bkt_estimate": 0.4694479754466438,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8340159639257436,
+            "synthetic_mastery_gain": 0.0024554340903922833,
+            "production_bkt_estimate": 0.501719304570814,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8888888888888888
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.8336953699628239,
+            "synthetic_mastery_gain": 0.0021348401274725592,
+            "production_bkt_estimate": 0.5404209793863499,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8337916905237659,
+            "synthetic_mastery_gain": 0.0022311606884145574,
+            "production_bkt_estimate": 0.5868350729052234,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8666666666666667
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8315605298353513,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 84,
+        "topic_coverage": 0.6666666666666666,
+        "final_estimate_error": -0.24695661761854248,
+        "final_absolute_estimate_error": 0.24695661761854248
+      },
+      {
+        "profile": "strong",
+        "run": 1,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.817220936586362,
+            "synthetic_mastery_gain": 0.002504866954699314,
+            "production_bkt_estimate": 0.3425287356321839,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.8179304801966886,
+            "synthetic_mastery_gain": 0.003214410565025916,
+            "production_bkt_estimate": 0.48505747126436777,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8188236927996759,
+            "synthetic_mastery_gain": 0.004107623168013275,
+            "production_bkt_estimate": 0.5690287542312986,
+            "topics_practiced": 2,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8888888888888888
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.8193070011029732,
+            "synthetic_mastery_gain": 0.004590931471310511,
+            "production_bkt_estimate": 0.634162843784982,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8186818975997632,
+            "synthetic_mastery_gain": 0.0039658279681005215,
+            "production_bkt_estimate": 0.7298630919639938,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8666666666666667
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8147160696316627,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 102,
+        "topic_coverage": 1.0,
+        "final_estimate_error": -0.08881880563576938,
+        "final_absolute_estimate_error": 0.08881880563576938
+      },
+      {
+        "profile": "strong",
+        "run": 2,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.8203688211396275,
+            "synthetic_mastery_gain": 0.0024755281561570364,
+            "production_bkt_estimate": 0.2866666666666667,
+            "topics_practiced": 1,
+            "topic_coverage": 0.1111111111111111,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.8199329374428515,
+            "synthetic_mastery_gain": 0.002039644459380985,
+            "production_bkt_estimate": 0.37480006475635425,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8198518339799078,
+            "synthetic_mastery_gain": 0.00195854099643733,
+            "production_bkt_estimate": 0.3998143884842564,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7777777777777778
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.8197775985764789,
+            "synthetic_mastery_gain": 0.0018843055930084507,
+            "production_bkt_estimate": 0.4464373409882714,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.75
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8193588463213097,
+            "synthetic_mastery_gain": 0.0014655533378392649,
+            "production_bkt_estimate": 0.4267738606527441,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8178932929834705,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 81,
+        "topic_coverage": 0.6666666666666666,
+        "final_estimate_error": -0.39258498566856564,
+        "final_absolute_estimate_error": 0.39258498566856564
+      },
+      {
+        "profile": "strong",
+        "run": 2,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.8100497575387202,
+            "synthetic_mastery_gain": 0.0036323604389953967,
+            "production_bkt_estimate": 0.3425287356321839,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.8100720165173728,
+            "synthetic_mastery_gain": 0.0036546194176479974,
+            "production_bkt_estimate": 0.48505747126436777,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8109254452242114,
+            "synthetic_mastery_gain": 0.0045080481244865744,
+            "production_bkt_estimate": 0.6275862068965516,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.8117791375838674,
+            "synthetic_mastery_gain": 0.005361740484142619,
+            "production_bkt_estimate": 0.6723109583695966,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.9166666666666666
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8119108497182582,
+            "synthetic_mastery_gain": 0.005493452618533401,
+            "production_bkt_estimate": 0.7004123485247813,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8666666666666667
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8064173970997248,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 104,
+        "topic_coverage": 1.0,
+        "final_estimate_error": -0.11149850119347693,
+        "final_absolute_estimate_error": 0.11149850119347693
+      },
+      {
+        "profile": "strong",
+        "run": 3,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.8391930646264547,
+            "synthetic_mastery_gain": 0.002547051675967138,
+            "production_bkt_estimate": 0.3425287356321839,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.8390978317612396,
+            "synthetic_mastery_gain": 0.002451818810752071,
+            "production_bkt_estimate": 0.4694479754466438,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8392166082333858,
+            "synthetic_mastery_gain": 0.0025705952828982692,
+            "production_bkt_estimate": 0.5963672152611035,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.8387658801573756,
+            "synthetic_mastery_gain": 0.0021198672068880597,
+            "production_bkt_estimate": 0.6039954670552048,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.9166666666666666
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8382140623444734,
+            "synthetic_mastery_gain": 0.0015680493939858042,
+            "production_bkt_estimate": 0.6473429304765093,
+            "topics_practiced": 2,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.9333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8366460129504876,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 96,
+        "topic_coverage": 0.8888888888888888,
+        "final_estimate_error": -0.19087113186796412,
+        "final_absolute_estimate_error": 0.19087113186796412
+      },
+      {
+        "profile": "strong",
+        "run": 3,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.8389842700337682,
+            "synthetic_mastery_gain": 0.0028938974106174076,
+            "production_bkt_estimate": 0.3425287356321839,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.838796188224247,
+            "synthetic_mastery_gain": 0.002705815601096173,
+            "production_bkt_estimate": 0.48505747126436777,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8389539304483179,
+            "synthetic_mastery_gain": 0.002863557825167118,
+            "production_bkt_estimate": 0.5690287542312986,
+            "topics_practiced": 2,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8888888888888888
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.8385858423820727,
+            "synthetic_mastery_gain": 0.0024954697589218977,
+            "production_bkt_estimate": 0.6442991114557003,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8378805972937944,
+            "synthetic_mastery_gain": 0.0017902246706436031,
+            "production_bkt_estimate": 0.631715703778139,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8360903726231508,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 104,
+        "topic_coverage": 1.0,
+        "final_estimate_error": -0.20616489351565537,
+        "final_absolute_estimate_error": 0.20616489351565537
+      },
+      {
+        "profile": "strong",
+        "run": 4,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.818154787409989,
+            "synthetic_mastery_gain": 0.003257137940133492,
+            "production_bkt_estimate": 0.3425287356321839,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.8186937364467366,
+            "synthetic_mastery_gain": 0.0037960869768810523,
+            "production_bkt_estimate": 0.42919540229885056,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8181824943092377,
+            "synthetic_mastery_gain": 0.003284844839382184,
+            "production_bkt_estimate": 0.5561146421133104,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.817554105913572,
+            "synthetic_mastery_gain": 0.0026564564437164817,
+            "production_bkt_estimate": 0.5564858885111434,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.9166666666666666
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8179651330841051,
+            "synthetic_mastery_gain": 0.0030674836142495776,
+            "production_bkt_estimate": 0.5802423398011664,
+            "topics_practiced": 2,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8666666666666667
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8148976494698555,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 85,
+        "topic_coverage": 0.7777777777777778,
+        "final_estimate_error": -0.23772279328293877,
+        "final_absolute_estimate_error": 0.23772279328293877
+      },
+      {
+        "profile": "strong",
+        "run": 4,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.8238823990410202,
+            "synthetic_mastery_gain": 0.0032529613391996115,
+            "production_bkt_estimate": 0.3425287356321839,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.8238462779212274,
+            "synthetic_mastery_gain": 0.0032168402194068246,
+            "production_bkt_estimate": 0.48505747126436777,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8243304693278695,
+            "synthetic_mastery_gain": 0.003701031626048845,
+            "production_bkt_estimate": 0.6275862068965516,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.8247976301717235,
+            "synthetic_mastery_gain": 0.004168192469902854,
+            "production_bkt_estimate": 0.7232864550755633,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8249675209029439,
+            "synthetic_mastery_gain": 0.004338083201123277,
+            "production_bkt_estimate": 0.7680112065486084,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.9333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8206294377018206,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 105,
+        "topic_coverage": 1.0,
+        "final_estimate_error": -0.05695631435433546,
+        "final_absolute_estimate_error": 0.05695631435433546
+      },
+      {
+        "profile": "strong",
+        "run": 5,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.8253590678252755,
+            "synthetic_mastery_gain": 0.0032023657860378307,
+            "production_bkt_estimate": 0.2881333980896875,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.8258830739756909,
+            "synthetic_mastery_gain": 0.00372637193645331,
+            "production_bkt_estimate": 0.4265000185991147,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8256459712701084,
+            "synthetic_mastery_gain": 0.003489269230870784,
+            "production_bkt_estimate": 0.4226175366640825,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.8254662270388472,
+            "synthetic_mastery_gain": 0.00330952499960957,
+            "production_bkt_estimate": 0.430696654613532,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8250233505753122,
+            "synthetic_mastery_gain": 0.0028666485360745453,
+            "production_bkt_estimate": 0.5523595381554172,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8221567020392376,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 87,
+        "topic_coverage": 0.6666666666666666,
+        "final_estimate_error": -0.272663812419895,
+        "final_absolute_estimate_error": 0.272663812419895
+      },
+      {
+        "profile": "strong",
+        "run": 5,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.8339599530303402,
+            "synthetic_mastery_gain": 0.0027964320954693145,
+            "production_bkt_estimate": 0.3425287356321839,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.8341080943359868,
+            "synthetic_mastery_gain": 0.0029445734011158686,
+            "production_bkt_estimate": 0.48505747126436777,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.8342630066276566,
+            "synthetic_mastery_gain": 0.0030994856927857306,
+            "production_bkt_estimate": 0.5731908693540553,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8888888888888888
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.8342203345480969,
+            "synthetic_mastery_gain": 0.0030568136132259616,
+            "production_bkt_estimate": 0.6872470683032293,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.9166666666666666
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.8339181287195957,
+            "synthetic_mastery_gain": 0.002754607784724805,
+            "production_bkt_estimate": 0.7319718197762742,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8666666666666667
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.8311635209348709,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 105,
+        "topic_coverage": 1.0,
+        "final_estimate_error": -0.10194630894332146,
+        "final_absolute_estimate_error": 0.10194630894332146
+      },
+      {
+        "profile": "forgetful",
+        "run": 1,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.6858098265256589,
+            "synthetic_mastery_gain": 0.004356902716029509,
+            "production_bkt_estimate": 0.2881333980896875,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.6536815157488168,
+            "synthetic_mastery_gain": -0.027771408060812575,
+            "production_bkt_estimate": 0.41779909285658556,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.6189721314970589,
+            "synthetic_mastery_gain": -0.06248079231257053,
+            "production_bkt_estimate": 0.505932490946273,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7777777777777778
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5910282764154764,
+            "synthetic_mastery_gain": -0.09042464739415301,
+            "production_bkt_estimate": 0.6442991114557003,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5657331735596552,
+            "synthetic_mastery_gain": -0.11571975024997416,
+            "production_bkt_estimate": 0.6724005016108849,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.6814529238096294,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 99,
+        "topic_coverage": 1.0,
+        "final_estimate_error": 0.10666732805122969,
+        "final_absolute_estimate_error": 0.10666732805122969
+      },
+      {
+        "profile": "forgetful",
+        "run": 1,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.6485199753582283,
+            "synthetic_mastery_gain": 0.004632924660151416,
+            "production_bkt_estimate": 0.28397128296693075,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.6139360879599339,
+            "synthetic_mastery_gain": -0.029950962738142906,
+            "production_bkt_estimate": 0.3721046810566183,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5868414505746951,
+            "synthetic_mastery_gain": -0.05704560012338178,
+            "production_bkt_estimate": 0.46006548442653306,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5559148199810067,
+            "synthetic_mastery_gain": -0.08797223071707017,
+            "production_bkt_estimate": 0.45140754898662583,
+            "topics_practiced": 1,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5219209407334879,
+            "synthetic_mastery_gain": -0.1219661099645889,
+            "production_bkt_estimate": 0.4928811193459308,
+            "topics_practiced": 1,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4666666666666667
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.6438870506980768,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 82,
+        "topic_coverage": 0.7777777777777778,
+        "final_estimate_error": -0.02903982138755712,
+        "final_absolute_estimate_error": 0.02903982138755712
+      },
+      {
+        "profile": "forgetful",
+        "run": 2,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.6906350255387788,
+            "synthetic_mastery_gain": 0.0042624003114504205,
+            "production_bkt_estimate": 0.3269192398144598,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.652863373665086,
+            "synthetic_mastery_gain": -0.03350925156224238,
+            "production_bkt_estimate": 0.42919540229885056,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.6225023765976928,
+            "synthetic_mastery_gain": -0.06387024862963553,
+            "production_bkt_estimate": 0.4351343120471232,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7777777777777778
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5903729195291301,
+            "synthetic_mastery_gain": -0.09599970569819827,
+            "production_bkt_estimate": 0.4688723725943144,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.563970410946057,
+            "synthetic_mastery_gain": -0.1224022142812713,
+            "production_bkt_estimate": 0.50348517829195,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.6863726252273283,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 90,
+        "topic_coverage": 1.0,
+        "final_estimate_error": -0.06048523265410699,
+        "final_absolute_estimate_error": 0.06048523265410699
+      },
+      {
+        "profile": "forgetful",
+        "run": 2,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.6553826978170303,
+            "synthetic_mastery_gain": 0.004711391672640564,
+            "production_bkt_estimate": 0.3425287356321839,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 1.0
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.6257131524556789,
+            "synthetic_mastery_gain": -0.024958153688710794,
+            "production_bkt_estimate": 0.4265000185991147,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5927573654346829,
+            "synthetic_mastery_gain": -0.05791394070970679,
+            "production_bkt_estimate": 0.5104713015660454,
+            "topics_practiced": 2,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7777777777777778
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5620342264762749,
+            "synthetic_mastery_gain": -0.08863707966811485,
+            "production_bkt_estimate": 0.6442991114557003,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5375900102302467,
+            "synthetic_mastery_gain": -0.11308129591414307,
+            "production_bkt_estimate": 0.6262248471678327,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.6506713061443897,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 98,
+        "topic_coverage": 1.0,
+        "final_estimate_error": 0.088634836937586,
+        "final_absolute_estimate_error": 0.088634836937586
+      },
+      {
+        "profile": "forgetful",
+        "run": 3,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.666093743358625,
+            "synthetic_mastery_gain": 0.004501940285004058,
+            "production_bkt_estimate": 0.2593203817906328,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.6293166408241988,
+            "synthetic_mastery_gain": -0.032275162249422173,
+            "production_bkt_estimate": 0.3625459110122317,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.8333333333333334
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5966071408855481,
+            "synthetic_mastery_gain": -0.06498466218807286,
+            "production_bkt_estimate": 0.41042673595412604,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.7777777777777778
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5724616240364478,
+            "synthetic_mastery_gain": -0.08913017903717313,
+            "production_bkt_estimate": 0.4829506382260895,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.75
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5472529591867965,
+            "synthetic_mastery_gain": -0.11433884388682447,
+            "production_bkt_estimate": 0.48184470974063526,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.661591803073621,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 76,
+        "topic_coverage": 0.7777777777777778,
+        "final_estimate_error": -0.06540824944616125,
+        "final_absolute_estimate_error": 0.06540824944616125
+      },
+      {
+        "profile": "forgetful",
+        "run": 3,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.6697511325389871,
+            "synthetic_mastery_gain": 0.0040950107199995145,
+            "production_bkt_estimate": 0.28397128296693075,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.6337710905860333,
+            "synthetic_mastery_gain": -0.031885031232954275,
+            "production_bkt_estimate": 0.2753133475270235,
+            "topics_practiced": 1,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5942729614787639,
+            "synthetic_mastery_gain": -0.07138316034022374,
+            "production_bkt_estimate": 0.4119500817074732,
+            "topics_practiced": 3,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5555555555555556
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5692519959482468,
+            "synthetic_mastery_gain": -0.09640412587074076,
+            "production_bkt_estimate": 0.5000834797971607,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5833333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5441834749191822,
+            "synthetic_mastery_gain": -0.12147264689980541,
+            "production_bkt_estimate": 0.5880442831670755,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.6656561218189876,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 77,
+        "topic_coverage": 1.0,
+        "final_estimate_error": 0.04386080824789329,
+        "final_absolute_estimate_error": 0.04386080824789329
+      },
+      {
+        "profile": "forgetful",
+        "run": 4,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.6634321177675508,
+            "synthetic_mastery_gain": 0.00460790037842429,
+            "production_bkt_estimate": 0.23373806054719118,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.6325371452548085,
+            "synthetic_mastery_gain": -0.026287072134318024,
+            "production_bkt_estimate": 0.22985557861215902,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5995719559704171,
+            "synthetic_mastery_gain": -0.05925226141870943,
+            "production_bkt_estimate": 0.2616907183930842,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5737019703813657,
+            "synthetic_mastery_gain": -0.08512224700776083,
+            "production_bkt_estimate": 0.31684898506096026,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4166666666666667
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5497011472583365,
+            "synthetic_mastery_gain": -0.10912307013079003,
+            "production_bkt_estimate": 0.43960610975266334,
+            "topics_practiced": 2,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.6588242173891266,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 117,
+        "topic_coverage": 0.8888888888888888,
+        "final_estimate_error": -0.11009503750567318,
+        "final_absolute_estimate_error": 0.11009503750567318
+      },
+      {
+        "profile": "forgetful",
+        "run": 4,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.6701553036115029,
+            "synthetic_mastery_gain": 0.0046016716723604745,
+            "production_bkt_estimate": 0.28397128296693075,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.6340200152141182,
+            "synthetic_mastery_gain": -0.031533616725024194,
+            "production_bkt_estimate": 0.36794256593386154,
+            "topics_practiced": 2,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.6000523333025507,
+            "synthetic_mastery_gain": -0.06550129863659171,
+            "production_bkt_estimate": 0.39751851135829597,
+            "topics_practiced": 2,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5555555555555556
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5687320890442727,
+            "synthetic_mastery_gain": -0.09682154289486966,
+            "production_bkt_estimate": 0.535885131867723,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5442980297897843,
+            "synthetic_mastery_gain": -0.12125560214935815,
+            "production_bkt_estimate": 0.5911253930401608,
+            "topics_practiced": 3,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.6655536319391424,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 84,
+        "topic_coverage": 1.0,
+        "final_estimate_error": 0.04682736325037651,
+        "final_absolute_estimate_error": 0.04682736325037651
+      },
+      {
+        "profile": "forgetful",
+        "run": 5,
+        "arm": "random",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.6657016912299556,
+            "synthetic_mastery_gain": 0.0047411441818902,
+            "production_bkt_estimate": 0.23373806054719118,
+            "topics_practiced": 3,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.3333333333333333
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.6345741146197823,
+            "synthetic_mastery_gain": -0.02638643242828309,
+            "production_bkt_estimate": 0.31167054693430235,
+            "topics_practiced": 3,
+            "topic_coverage": 0.4444444444444444,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.6068886161034088,
+            "synthetic_mastery_gain": -0.054071930944656565,
+            "production_bkt_estimate": 0.39422276618906943,
+            "topics_practiced": 3,
+            "topic_coverage": 0.6666666666666666,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5555555555555556
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5811751678978174,
+            "synthetic_mastery_gain": -0.07978537915024797,
+            "production_bkt_estimate": 0.4421035911309638,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5833333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5554128276711275,
+            "synthetic_mastery_gain": -0.10554771937693785,
+            "production_bkt_estimate": 0.44295678340582406,
+            "topics_practiced": 3,
+            "topic_coverage": 0.8888888888888888,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.6609605470480654,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 104,
+        "topic_coverage": 0.8888888888888888,
+        "final_estimate_error": -0.11245604426530348,
+        "final_absolute_estimate_error": 0.11245604426530348
+      },
+      {
+        "profile": "forgetful",
+        "run": 5,
+        "arm": "adaptive",
+        "sessions": [
+          {
+            "session": 1,
+            "synthetic_true_mastery": 0.6556832267072791,
+            "synthetic_mastery_gain": 0.004469448790173969,
+            "production_bkt_estimate": 0.28397128296693075,
+            "topics_practiced": 2,
+            "topic_coverage": 0.2222222222222222,
+            "repeated_presentations": 0,
+            "mean_grade": 0.6666666666666666
+          },
+          {
+            "session": 2,
+            "synthetic_true_mastery": 0.620843831882156,
+            "synthetic_mastery_gain": -0.030369946034949136,
+            "production_bkt_estimate": 0.3175367487943492,
+            "topics_practiced": 1,
+            "topic_coverage": 0.3333333333333333,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5
+          },
+          {
+            "session": 3,
+            "synthetic_true_mastery": 0.5823378861611336,
+            "synthetic_mastery_gain": -0.06887589175597153,
+            "production_bkt_estimate": 0.35668339345668804,
+            "topics_practiced": 2,
+            "topic_coverage": 0.5555555555555556,
+            "repeated_presentations": 0,
+            "mean_grade": 0.4444444444444444
+          },
+          {
+            "session": 4,
+            "synthetic_true_mastery": 0.5524410234765997,
+            "synthetic_mastery_gain": -0.09877275444050537,
+            "production_bkt_estimate": 0.49363095025395154,
+            "topics_practiced": 3,
+            "topic_coverage": 0.7777777777777778,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5833333333333334
+          },
+          {
+            "session": 5,
+            "synthetic_true_mastery": 0.5306909766679423,
+            "synthetic_mastery_gain": -0.12052280124916281,
+            "production_bkt_estimate": 0.5327775949162903,
+            "topics_practiced": 2,
+            "topic_coverage": 1.0,
+            "repeated_presentations": 0,
+            "mean_grade": 0.5333333333333333
+          }
+        ],
+        "initial_synthetic_true_mastery": 0.6512137779171051,
+        "question_repetition_rate": 0.0,
+        "recommendation_weak_topic_precision": 0.0,
+        "recommendation_count": 78,
+        "topic_coverage": 1.0,
+        "final_estimate_error": 0.0020866182483479934,
+        "final_absolute_estimate_error": 0.0020866182483479934
+      }
+    ],
+    "arms": {
+      "random": {
+        "sample_size": 20,
+        "question_repetition_rate_mean": 0.0,
+        "question_repetition_rate_stddev": 0.0,
+        "topic_coverage_mean": 0.8055555555555556,
+        "topic_coverage_stddev": 0.11587029785896782,
+        "final_estimate_error_mean": -0.1484396762346067,
+        "final_estimate_error_stddev": 0.10943554843814907,
+        "final_absolute_estimate_error_mean": 0.15910640903972967,
+        "final_absolute_estimate_error_stddev": 0.09325034769412692,
+        "synthetic_mastery_gain_mean": 0.01467144081388084,
+        "synthetic_mastery_gain_stddev": 0.08555182853764703,
+        "recommendation_weak_topic_precision_mean": 0.14299258324854985,
+        "recommendation_weak_topic_precision_stddev": 0.2531023382508509,
+        "recommendation_sample_size": 20
+      },
+      "adaptive": {
+        "sample_size": 20,
+        "question_repetition_rate_mean": 0.0,
+        "question_repetition_rate_stddev": 0.0,
+        "topic_coverage_mean": 0.9111111111111111,
+        "topic_coverage_stddev": 0.13877773329774218,
+        "final_estimate_error_mean": -0.02658619349583822,
+        "final_estimate_error_stddev": 0.09799719804143968,
+        "final_absolute_estimate_error_mean": 0.07903025547998636,
+        "final_absolute_estimate_error_stddev": 0.06375339384957779,
+        "synthetic_mastery_gain_mean": 0.012203978072261996,
+        "synthetic_mastery_gain_stddev": 0.08656228016069142,
+        "recommendation_weak_topic_precision_mean": 0.12869820024198428,
+        "recommendation_weak_topic_precision_stddev": 0.22688151976698648,
+        "recommendation_sample_size": 20
+      }
+    },
+    "seed": 17,
+    "sessions": 5,
+    "questions_per_session": 3,
+    "repeat_count": 5,
+    "topic_count": 9
+  }
+}

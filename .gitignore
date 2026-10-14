@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+storage/uploads/*
+!storage/uploads/.gitkeep
+.pytest_cache/
+*.sqlite
+*.log
+.DS_Store
+Thumbs.db

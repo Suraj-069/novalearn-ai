@@ -1,0 +1,34 @@
+@import "@fontsource-variable/inter";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-canvas font-sans text-ink antialiased; font-feature-settings: "cv11", "ss01"; }
+  h1, h2, h3 { @apply tracking-tight; }
+  :focus-visible { @apply outline-none ring-2 ring-nova-500 ring-offset-2 ring-offset-white; }
+  ::selection { @apply bg-nova-100; }
+}
+
+@layer components {
+  .card { @apply rounded-card border border-line bg-white shadow-card; }
+  .input {
+    @apply w-full rounded-ctl border border-line bg-white px-3.5 py-2.5 text-sm text-ink placeholder:text-ink-muted
+      transition-colors hover:border-slate-300 focus:border-nova-500;
+  }
+}
+
+@keyframes shimmer { 100% { transform: translateX(100%); } }
+.skeleton { position: relative; overflow: hidden; @apply rounded-ctl bg-slate-200/70; }
+.skeleton::after {
+  content: ""; position: absolute; inset: 0; transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.65), transparent);
+  animation: shimmer 1.4s infinite;
+}
+@keyframes pop-in { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+.pop-in { animation: pop-in .18s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+}

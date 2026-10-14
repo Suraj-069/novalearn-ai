@@ -1,0 +1,24 @@
+# Database only. Backend and frontend run directly on your machine (see README).
+# Uses the official pgvector image so `CREATE EXTENSION vector` works out of the box.
+# STATUS: written but NOT tested in the sandbox that built this project (Docker was unavailable there).
+# The same schema was verified against a native PostgreSQL 16 + pgvector 0.6 install.
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: novalearn-db
+    environment:
+      POSTGRES_USER: nova
+      POSTGRES_PASSWORD: nova        # local development only; change for any shared environment
+      POSTGRES_DB: novalearn
+    ports:
+      - "5432:5432"
+    volumes:
+      - novalearn-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nova -d novalearn"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  novalearn-pgdata:
